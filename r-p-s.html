@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+    <title>RPS</title>
+</head>
+
+<body>
+    <header>
+        <div class="letsPlay">
+            <h1>Ready..Set..</h1>
+            <h2>Rock, Paper, Scissors</h2>
+        </div>
+    </header>
+    <main>
+        <section>
+            <div id="rules">
+                <h3>Rules:</h3>
+                    <ul>
+                        <li>Paper beats Rock</li>
+                        <li>Rock beats Scissors</li>
+                        <li>Scissors beats Paper</li>
+                    </ul>
+            </div>
+        </section>
+        <section>
+            <label>
+                <input type="radio" name="game" value="rock">
+            </label>
+            <label>
+                <input type="radio" name="game" value="paper">
+            </label>
+            <label>
+                <input type="radio" name="game" value="scissors">
+            </label>
+            <button id="play-button">Play</button>
+        </section>
+        <section>
+            <div id="wins"></div>
+            <div id="losses"></div>
+            <div id="draws"></div>
+        </section>
+    </main>
+    <footer>
+        
+    </footer>
+
+    <script type="module" src="r-p-s.js"></script>
+</body>
+
+</html>
