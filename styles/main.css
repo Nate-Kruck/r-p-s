@@ -1,1 +1,19 @@
 /* add home page styles here */
+
+body {
+    background-color: rgb(13, 92, 99, 0.6);
+}
+
+input {
+    display: none;
+}
+ 
+input:checked + img {
+      border: solid 3px black;
+}
+
+input[type=radio]:checked + img {
+  transform: 
+    rotateZ(-15deg) 
+    rotateX(20deg);
+}
