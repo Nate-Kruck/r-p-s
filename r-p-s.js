@@ -34,17 +34,18 @@ button.addEventListener('click', () => {
         winnerScreen.textContent = 'You are the winner!';
     }
     
-    if (result === 'draw') {
+    else if (result === 'draw') {
         draws++;
         drawScreen.textContent = 'You tied!';
     }
     
-    if (result === 'lose') {
+    else if (result === 'lose') {
         loserScreen.textContent = 'You are the loser!';
     }
 
     choiceScreen.textContent = `Choices: ${choices}`;
     winnerScreen.textContent = `Wins: ${wins}`;
+    drawScreen.textContent = `Draws: ${draws}`;
     loserScreen.textContent = `Losses: ${lossData}`;
     resultsScreen.textContent = `Results: ${result}`;
 });
