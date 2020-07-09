@@ -1,30 +1,25 @@
-
-// rock = 1
-// paper = 2
-// scissors = 3
-
-export default function checkResult(player, computer) {
+export function checkResult(player, computer) {
     // draw
     if (player === computer) {
-        return 0;
+        return 'draw';
     
     // paper over rock - computer W  
-    } else if (player === 1 && computer === 2) {
-        return 2;
+    } else if (player === 'rock' && computer === 'paper') {
+        return 'lose';
     // rock over scissors - player W
-    } else if (player === 1 && computer === 3) {
-        return 1;
+    } else if (player === 'rock' && computer === 'scissors') {
+        return 'win';
     // paper over rock - player W
-    } else if (player === 2 && computer === 1) {
-        return 2;
+    } else if (player === 'paper' && computer === 'rock') {
+        return 'win';
     // scissors over paper - computer w
-    } else if (player === 2 && computer === 3) {
-        return 3;
+    } else if (player === 'paper' && computer === 'scissors') {
+        return 'lose';
     // rock over scissors computer W
-    } else if (player === 3 && computer === 1) {
-        return 1;
+    } else if (player === 'scissors' && computer === 'rock') {
+        return 'lose';
     // scissors over paper - player W
-    } else if (player === 3 && computer === 2) {
-        return 3;
+    } else if (player === 'scissors' && computer === 'paper') {
+        return 'win';
     }
 }

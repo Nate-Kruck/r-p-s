@@ -1,6 +1,6 @@
 // import functions and grab DOM elements
 import checkResult from './check-result.js';
-// import getRandomThrow from './get-random-throw.js';
+import getRandomThrow from './get-random-throw.js';
 
 const button = document.querySelector('play-button');
 const winner = document.querySelector('wins');
@@ -10,7 +10,7 @@ const draw = document.querySelector('draws');
 const message = document.querySelector('user-message');
 // initialize state
 let wins = 0;
-// let losses = 0;
+let losses = 0;
 let totalDraws = 0;
 
 // set event listeners to update state and DOM
@@ -26,15 +26,15 @@ button.addEventListener('click', () => {
         message.textContent = 'Winner!';
         wins++;
         winner.textContent = wins;
-    } else if (draw) {
+    } else if (loss) {
         message.textContent = 'Losser';
-        totalDraws++;
-        loser.textContent = totalDraws;
-    } /* else {
+        losses++;
+        loser.textContent = losses;
+    } else {
         message.textContent = 'Draw!';
         totalDraws++;
         draw.textContent = totalDraws;
-    } */
+    }
 });
 
 
