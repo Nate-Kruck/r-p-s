@@ -1,6 +1,6 @@
 /* getRandomThrow function that generates a random number then returns rock, paper, scissors. */
 
-export function getRandomThrow() {
+export default function getRandomThrow() {
     const randomResult = Math.ceil(Math.random() * 3);
 
     if (randomResult === 0) {
