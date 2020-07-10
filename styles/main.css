@@ -2,18 +2,27 @@
 
 body {
     background-color: rgb(13, 92, 99, 0.6);
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 input {
-    display: none;
+    display: none;    
 }
  
-input:checked + img {
-      border: solid 3px black;
+input[type=radio]:checked + img {
+    border: solid 3px black;
+    transform: rotateZ(-15deg) rotateX(20deg);
 }
 
-input[type=radio]:checked + img {
-  transform: 
-    rotateZ(-15deg) 
-    rotateX(20deg);
+.letsPlay {
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid black;
+    border-radius: 1em 4em 1em 4em / 2em 1em 2em 1em;
+    box-shadow: 0 0 20px black;
+    text-align: center;
 }
+
